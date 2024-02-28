@@ -56,7 +56,7 @@ public class forCorporateStep {
 		  hw.setName();
 		    hw.setOrganization();
 		    hw.setContact();
-		    hw.setMail();
+		    hw.setMaill();
 		    hw.setSize();
 		    hw.setInterested();
 		    hw.refresh();
