@@ -1,0 +1,923 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 27, 2024 12:05:38 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SmokeScenarios</p>
+            <p class="text-sm">
+              <span>12:05:43 am</span> / <span>00:00:53:112</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SmokeScenarios</h5>
+<span class='badge badge-success'>02.27.2024 12:05:43 am</span>
+<span class='badge badge-danger'>02.27.2024 12:06:36 am</span>
+<span class='badge badge-default'>00:00:53:112</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Navigate to practo.com.com</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.browser_should_be_opened_and_user_navigates_to_practo_com_site_with_url()">
+                <span>Given Browser should be opened and user navigates to practo.com site with url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Navigate to practo.com.com
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.validate_the_practo_com_site_title()">
+                <span>Then validate the practo.com site title</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Navigate to practo.com.com
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>validation of location search bar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>validation of location search bar</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user is on practo.com home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of location search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user should clear the data present in home page location bar and  send the "Chennai" name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of location search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then navigate to doctor speciality search bar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of location search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>validation of home page search bar</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.doctorDetailsStep.user_is_on_practo_com_home_page()">
+                <span>Given user is on practo.com home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of home page search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_should_clear_the_data_present_in_search_bar_and_user_send_the_doctor_dentist_name()">
+                <span>When user should clear the data present in search  bar and user send the doctor dentist name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of home page search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.doctor_details_are_displayed_for_entered_speciality()">
+                <span>Then doctor details are displayed for entered speciality</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validation of home page search bar
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>navigating to surgeries</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.doctorDetailsStep.user_is_on_practo_com_home_page()">
+                <span>Given user is on practo.com home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>navigating to surgeries
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_click_surgries()">
+                <span>When user click surgries</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>navigating to surgeries
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded10.png' src="../Screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_should_verify_the_page_is_navigated_to_surgaries_page()">
+                <span>Then user should verify the page is navigated to surgaries page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>navigating to surgeries
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded11.png' src="../Screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>verifying all popular surgaries are displayed</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_is_on_surgeries_page()">
+                <span>Given user is on surgeries page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verifying all popular surgaries are displayed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded12.png' src="../Screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_scrolls_until_popular_surgaries()">
+                <span>When user scrolls until popular surgaries</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verifying all popular surgaries are displayed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded13.png' src="../Screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_should_verify_surgaries_areextracted_and_displayed_in_the_consol_output()">
+                <span>Then user should verify surgaries areextracted and  displayed in the consol output</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verifying all popular surgaries are displayed
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded14.png' src="../Screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>validating for corporate option</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_is_on_home_page()">
+                <span>Given user is on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating for corporate option
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded15.png' src="../Screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_clicks_for_corporate_option()">
+                <span>When user clicks for corporate option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating for corporate option
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded16.png' src="../Screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_clicks_health_and_wellness_option()">
+                <span>And user clicks  health and wellness option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating for corporate option
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded17.png' src="../Screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.schedule_a_demo_form_should_be_opened()">
+                <span>Then schedule a demo form should be opened</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating for corporate option
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded18.png' src="../Screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>validating schedule a demo button</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_is_on_form_page()">
+                <span>Given user is on form page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating schedule a demo button
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded19.png' src="../Screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_enters_valid_name_valid_email_and_valid_details()">
+                <span>When user enters valid name valid email and valid details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating schedule a demo button
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded20.png' src="../Screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.schedule_a_demo_button_should_be_enabled()">
+                <span>Then schedule a demo button should be enabled</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating schedule a demo button
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded21.png' src="../Screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>validating Thank you message</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_is_on_form_page()">
+                <span>Given user is on form page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating Thank you message
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded22.png' src="../Screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_enters_valid_name_valid_email_and_valid_details()">
+                <span>When user enters valid name valid email and valid details</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating Thank you message
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded23.png' src="../Screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.user_click_schedule_a_demo_button()">
+                <span>And user click schedule a demo button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating Thank you message
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded24.png' src="../Screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="findingHospitals.StepDefination.smokeScenarios_findHospitals.thank_you_message_should_be_displayed_confirming_successful_submission()">
+                <span>Then Thank You message should be displayed confirming successful submission</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>findingHospitals.StepDefination.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>validating Thank you message
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded25.png' src="../Screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:05:43 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Navigate to practo.com.com</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.Navigate to practo.com.com</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:05:43 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>validation of location search bar</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.validation of location search bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:05:48 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>validation of home page search bar</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.validation of home page search bar</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:05:58 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>navigating to surgeries</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.navigating to surgeries</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:06:01 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>verifying all popular surgaries are displayed</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.verifying all popular surgaries are displayed</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:06:02 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>validating for corporate option</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.validating for corporate option</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:06:06 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='45'>validating schedule a demo button</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.validating schedule a demo button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:06:17 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>validating Thank you message</a>
+<div class="">
+<span class="badge badge-default">SmokeScenarios.validating Thank you message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 27, 2024 12:05:38 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 27, 2024 12:06:36 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>50</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"SmokeScenarios":53.112
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 50,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
